@@ -21,7 +21,6 @@ export default function Login({saveUserData}) {
     let myUser = { ...user };
     myUser[event.target.name] = event.target.value;
     setUser(myUser);
-    console.log(myUser);
   }
 
   async function sendLoginDataToApi() {
@@ -71,14 +70,12 @@ export default function Login({saveUserData}) {
 
     <div className="container">
       <div className="register ">
-        <div className="row register-form rounded-2  ">
-          <div className="col-md-6">
-            <div className="image">
-              <img src={gamingImg} className="w-100 image-height" alt="" />
-            </div>
+        <div className="row  rounded-2 register-form   ">
+          <div className="col-md-6 p-0">
+              <img src={gamingImg} className="w-100 image-height rounded-2" alt="" />
           </div>
-          <div className="col-md-6 ">
-            <div className="form">
+          <div className="col-md-6">
+            <div className="form ">
 
               <h2 className='text-center cl-h2 my-3 '>Sign in</h2>
               {error.length > 0 ? <div className="text-danger my-2">{error}</div> : ''}

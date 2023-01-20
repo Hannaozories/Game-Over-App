@@ -70,10 +70,8 @@ export default function Register() {
     <div className="container">
       <div className="register ">
         <div className="row register-form rounded-2  ">
-          <div className="col-md-6">
-            <div className="image">
-              <img src={gamingImg} className="w-100 image-height" alt="" />
-            </div>
+          <div className="col-md-6 p-0">
+              <img src={gamingImg} className="w-100 image-height rounded-2" alt="" />
           </div>
           <div className="col-md-6 ">
             <div className="form">
